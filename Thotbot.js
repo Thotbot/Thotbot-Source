@@ -49,6 +49,14 @@ bot.on('message', (message) => {
         messagesplit = "REMOVED";
     }
 
+    if (messagesplit[0] === "!stop") {
+        message.reply("https://m.imgur.com/r/The_Dennis/0VbZH5G");
+    }
+
+    if (messagesplit[0] === "!sourcecode") {
+	message.reply("https://github.com/Thotbot/Thotbot-Source/blob/master/Thotbot.js");
+    }
+
     for (var i = 0; i < messagesplit.length; i++) {
         messagesplit[i] = messagesplit[i].toLowerCase();
         var removedPunctMessageSplit = containsPunct(messagesplit[i]);
@@ -70,6 +78,7 @@ bot.on('message', (message) => {
     }
 });
 
-bot.login('REDACTED');
+bot.login('Mzg3ODAyOTI5MDg5NzQwODIw.DUliLA.zA-pEunkpgjTQx-78hSrzaOhrzo');
+
 
 
